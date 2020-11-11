@@ -1,0 +1,17 @@
+server:
+  port: 8010
+
+spring:
+  data:
+    mongodb:
+      authentication-database: admin
+      uri: mongodb://file-axe:file-axe@localhost:27017/file-axe
+      replicaSet:
+      auto-index-creation: true
+      properties:
+        connection-timeout: 30000
+        minimum-idle: 1
+        maximum-pool-size: 3
+        idle-timeout: 30000
+        max-lifetime: 120000
+
